@@ -85,7 +85,6 @@ phases:
                       requests:
                         cpu: 200m
                     imagePullPolicy: Always
-                    
           EOF
 cache:
   paths:
