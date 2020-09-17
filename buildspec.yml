@@ -4,6 +4,8 @@ env:
   variables:
     IMAGE_REPO_NAME: "04-mypage"
     _PROJECT_NAME: "04-mypage"
+    AWS_DEFAULT_REGION: "ap-northeast-2"
+    AWS_ACCOUNT_ID: "271153858532"
 
 phases:
   install:
@@ -44,8 +46,7 @@ phases:
           apiVersion: v1
           kind: Service
           metadata:
-            name: $_PROJECT_NAME
-            namespace: istio-cb-ns            
+            name: $_PROJECT_NAME         
             labels:
               app: $_PROJECT_NAME
           spec:
@@ -61,7 +62,6 @@ phases:
           kind: Deployment
           metadata:
             name: $_PROJECT_NAME
-            namespace: istio-cb-ns
             labels:
               app: $_PROJECT_NAME
           spec:
