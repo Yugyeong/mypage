@@ -2,8 +2,8 @@ version: 0.2
 
 env:
   variables:
-    IMAGE_REPO_NAME: "04-mypage"
-    _PROJECT_NAME: "04-mypage"
+    IMAGE_REPO_NAME: "mypage"
+    _PROJECT_NAME: "mypage"
     AWS_DEFAULT_REGION: "ap-northeast-2"
     AWS_ACCOUNT_ID: "271153858532"
 
